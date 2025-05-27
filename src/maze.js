@@ -7,7 +7,7 @@ export function createMaze(scene) {
   
     wallPositions.forEach(([x, z]) => {
       const wall = BABYLON.MeshBuilder.CreateBox("wall", { width: 2, height: 4, depth: 1 }, scene);
-      wall.position = new BABYLON.Vector3(x, 2, z);
+      wall.position = new BABYLON.Vector3(x, 4, z);
       wall.checkCollisions = true;
     });
   }
